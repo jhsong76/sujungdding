@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mypage.Mypost">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/deepgreen"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Theme.Sujungdding.NoActionBar"
+        app:popupTheme="@style/Theme.Sujungdding.PopupOverlay" />
+
+    <ScrollView
+        android:id="@+id/my_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/my_list"
+                android:layout_width="match_parent"
+                android:layout_height="675dp"
+                android:layout_weight="1"
+                android:cacheColorHint="#FFFFFF"
+                android:headerDividersEnabled="false"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

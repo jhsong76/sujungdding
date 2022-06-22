@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sujungdding">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Sujungdding"
+        android:usesCleartextTraffic="true">
+
+
+        <!--이민형-->
+        <activity
+            android:name=".login.Login"
+            android:label="수정띵"
+            android:theme="@style/Theme.Sujungdding.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Home"
+            android:theme="@style/Theme.Sujungdding.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".food.Food_Board"
+            android:label="음식 게시판"
+            android:theme="@style/Theme.Sujungdding.NoActionBar"/>
+
+        <activity
+            android:name=".product.Product_Board"
+            android:label="물품 게시판"
+            android:theme="@style/Theme.Sujungdding.NoActionBar"/>
+
+        <activity
+            android:name=".mypage.Mypost"
+            android:label="내가 쓴 게시글"
+            android:theme="@style/Theme.Sujungdding.NoActionBar"/>
+
+        <!--김수빈-->
+        <activity
+            android:name=".food.Food_Write"
+            android:label="게시글 작성"
+            android:theme="@style/Theme.Sujungdding.NoActionBar"/>
+
+        <activity
+            android:name=".food.Food_Read"
+            android:label="음식 게시글"
+            android:theme="@style/Theme.Sujungdding.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".product.Product_Write"
+            android:label="게시글 작성"
+            android:theme="@style/Theme.Sujungdding.NoActionBar"/>
+
+        <activity
+            android:name=".product.Product_Read"
+            android:label="물품 게시글"
+            android:theme="@style/Theme.Sujungdding.NoActionBar">
+        </activity>
+
+        <!--주희-->
+        <activity
+            android:name=".mypage.Setting"
+            android:label="찜/키워드 설정"
+            android:theme="@style/Theme.Sujungdding.NoActionBar"/>
+
+        <activity
+            android:name=".mypage.Passwordchage"
+            android:label="비밀번호 변경"
+            android:theme="@style/Theme.Sujungdding.NoActionBar"/>
+
+        <!--나-->
+        <activity
+            android:name=".signup.Signup"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Sujungdding.NoActionBar">
+
+        </activity>
+
+        <activity
+            android:name=".mypage.Mypage"
+            android:label="@string/toolbar_mypage"
+            android:theme="@style/Theme.Sujungdding.NoActionBar"/>
+
+        <activity
+            android:name="Chatroom"
+            android:label="@string/toolbar_chatroom"
+            android:theme="@style/Theme.Sujungdding.NoActionBar"/>
+
+        <!--DBTest-->
+        <activity
+            android:name=".Example">
+        </activity>
+
+        <activity
+            android:name=".Example2">
+        </activity>
+
+    </application>
+
+</manifest>

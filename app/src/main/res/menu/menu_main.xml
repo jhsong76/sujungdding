@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.sujungdding.signup.Signup">
+    <item
+        android:id="@+id/toolbar_mypage"
+        android:icon="@drawable/mypage_icon"
+        android:orderInCategory="100"
+        android:title="@string/toolbar_mypage"
+        app:showAsAction="always" />
+</menu>
